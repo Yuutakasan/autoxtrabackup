@@ -8,17 +8,17 @@ Percona innobackupex(xtrabackup) を使用した自動MySQLスケジュールバ
 
 Requirements
 ------------
-サポートされているMySQLディストリビューション：MySQL、Percona Server、MariaDB
-サポートされているLinuxディストリビューション：Debian、Ubuntu、CentOS、RedHat
-依存関係：percona-xtrabackup、からのダウンロード http://www.percona.com/software/percona-xtrabackup
+ - サポートされているMySQLディストリビューション:MySQL、Percona Server、MariaDB
+ - サポートされているLinuxディストリビューション:Debian、Ubuntu、CentOS、RedHat
+ - 依存関係：percona-xtrabackup、からのダウンロード http://www.percona.com/software/percona-xtrabackup
 
 このスクリプトはPercona-server 5.6のDebian 7（Wheezy）でテストされています。
 このスクリプトはCentOS 6.4でMariaDB-server-10でテストされています。
 
 Installation
 ------------
-autoxtrabackup.configを　/etc/default/autoxtrabackup　にコピーし、設定を編集します
-これは必須ではありませんが、推奨です。また、スクリプト内の設定を直接設定することもできます。
+autoxtrabackup.configを　/etc/default/autoxtrabackup　にコピーし、設定を編集してください。
+これは必須ではありませんが、推奨です。また、スクリプト内の設定を直接変更することも可能です。
 autoxtrabackup.shを/usr/local/bin/autoxtrabackupにコピーします。
 実行可能にし、cronjobを設定する
 
